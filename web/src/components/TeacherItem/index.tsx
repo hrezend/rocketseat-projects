@@ -1,31 +1,56 @@
 import React from 'react';
 
+import api from '../../services/api';
 import wppIcon from '../../assets/images/icons/whatsapp.svg';
-
 import './styles.css';
 
-function TeacherItem(){
+export interface Teacher{
+    id: number;
+    name: string;
+    whatsapp: string;
+    biografia: string;
+    avatar: string;
+    cost: number;
+    subject: string;
+}
+
+interface TeacherProps{
+    teacher: Teacher;
+}
+
+const TeacherItem:React.FC<TeacherProps> = ({teacher}) =>{
+
+    function createNewConnection(){
+        api.post('/connections',{
+            teacher_id: teacher.id
+        });
+    }
+
     return(
         <article className="teacher-item">
             <header>
-                <img src="https://hrezend.github.io/resume-web/img/profile.jpg" alt="hrezend"></img>
+                <img src={teacher.avatar} alt={teacher.name}></img>
                 <div>
-                    <strong>Hérson Rezende</strong>
-                    <span>Física</span>
+                    <strong>{teacher.name}</strong>
+                    <span>{teacher.subject}</span>
                 </div>
             </header>
             <p>
-                O melhor professor.
+                {teacher.biografia}
             </p>
             <footer>
                 <p>
                     Preço/Hora
-                    <strong>R$80,00</strong>
+                    <strong>{teacher.cost}</strong>
                 </p>
-                <button type="button">
+                <a target="_blank"
+                    href={`https://wa.me/${teacher.whatsapp}`}
+                    type="button"
+                    onClick={createNewConnection}
+                >
                     <img src={wppIcon} alt="WhatsApp"></img>
                     Send Message
-                </button>
+                </a>
             </footer>
         </article>
     );

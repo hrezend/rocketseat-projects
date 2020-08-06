@@ -23,13 +23,15 @@ export default class ClassesController{
                 this.select('class_schedule.*')
                     .from('class_schedule')
                     .whereRaw('`class_schedule`.`class_id` = `classes`.`id`')
-                    .whereRaw('`class_schedule`.`week_dau` = ??',[Number(filters.week_day as string)])
+                    .whereRaw('`class_schedule`.`week_day` = ??',[Number(filters.week_day as string)])
                     .whereRaw('`class_schedule`.`from` <= ??', [timeInMinutes])
                     .whereRaw('`class_schedule`.`to` > ??', [timeInMinutes])
             })
             .where('classes.subject', '=', filters.subject as string)
             .join('teachers', 'classes.teacher_id', '=', 'teachers.id')
             .select(['classes.*', 'teachers.*']);
+            
+        return response.json(classes);
     }
 
     async create(request: Request, response: Response){
