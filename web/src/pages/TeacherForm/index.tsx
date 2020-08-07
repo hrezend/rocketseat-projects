@@ -43,8 +43,7 @@ function TeacherForm(){
         e.preventDefault();
         api.post('/study', {name, avatar, whatsapp, biografia, subject, cost: Number(cost), schedule: scheduleItems})
             .then(() => {
-                alert('Okay');
-                history.push('/');
+                history.push('/redirect');
             })
             .catch(() => {
                 alert('An error was occurredy, try again');
