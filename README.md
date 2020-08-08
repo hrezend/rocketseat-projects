@@ -1,5 +1,5 @@
 <h3 align="center">
-    <img alt="Logo" title="#logo" width="300px" background="#8257E5" src="./web/src/assets/images/logo.svg"> 
+    <img alt="Logo" title="#logo" width="300px" src="./wallpapers/1 - Mobile - NLW #02 - 1080x1920.jpg"> 
     <br>
 </h3>
 
@@ -26,7 +26,7 @@
 
 O <strong>Proffy</strong> é uma aplicação Web e Mobile para ajudar pessoas a encontrarem professores particulares de qualquer disciplina.
 
-Essa aplicação foi construída na trilha <strong>Booster</strong> da <strong>Next Level Week 2</strong> distribuída pela [Rocketseat](https://rocketseat.com.br/).
+Essa aplicação foi construída na trilha <strong>Booster</strong> da <strong>Next Level Week 2</strong> e distribuída pela [Rocketseat](https://rocketseat.com.br/).
 
 <h3 align="center">
     <img alt="Proffy" title="#logo" width="300px" src="./web/src/assets/images/landing.svg">
