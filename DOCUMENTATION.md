@@ -13,7 +13,7 @@
 
 # 📄 Database
 
-Na aplicação vamos utilizar o **SQLite3** para nosso banco de dados, pois além de ser **MySQL** ele não precisa de nenhum ambiente de configuração na máquina para rodar.
+Na aplicação vamos utilizar o **SQLite3** para nosso banco de dados, pois além de ser relacional ele não precisa de nenhum ambiente de configuração na máquina para funcionar.
 
 ## Dependências
 
@@ -98,7 +98,7 @@ Para iniciarmos com o desenvolvimento do <strong>Back-end</strong> da nossa apli
 
 ### Express
 
-- O express será o responsável pelo roteamento do nosso servidor. Precisamos instalr o pacote padrão do express e também o @types, para utilizarmos com o TypeScript.
+- O express será o responsável pelo roteamento do nosso servidor. Precisamos instalar o pacote padrão do express e também o @types, para utilizarmos com o TypeScript.
 
 ```sh
   # Instação do express
@@ -107,14 +107,6 @@ Para iniciarmos com o desenvolvimento do <strong>Back-end</strong> da nossa apli
   # instalação do express com tipagem para TypeScript
   $ npm install @types/express -D
 
-```
-
-### ts-node
-
-- O **ts-node** serve para compilarmos através do **Node** arquivos **TypeScript**, pois o por padrão o **Node** executa somente **JavaScript**. Para isso, vamos instalar da seguinte forma:
-
-```sh
-  $ npm install ts-node -D
 ```
 
 ### ts-node-dev
@@ -129,15 +121,15 @@ Para iniciarmos com o desenvolvimento do <strong>Back-end</strong> da nossa apli
 
 ```json
   "scripts": {
-    "dev": "ts-node-dev src/server.ts"
+    "start": "ts-node-dev --transpile-only --ignore-watch node_modules --respawn src/server.ts"
   },
 ```
 
-- Por fim, podemos executar o servidor dessa maneira: `npm run dev`. Dessa forma, sempre que houver alguma alteração do código, o **ts-node-dev** irá fazer a reinicialização automática.
+- Por fim, podemos executar o servidor dessa maneira: `npm start`. Dessa forma, sempre que houver alguma alteração do código, o **ts-node-dev** irá fazer a reinicialização automática.
 
 ### CORS
 
-- O express será o responsável por permitir que outras urls acessem nossa API. Precisamos instalr o pacote padrão do cors e também o @types, para utilizarmos com o TypeScript.
+- O express será o responsável por permitir que outras urls acessem nossa API. Precisamos instalar o pacote padrão do cors e também o @types, para utilizarmos com o TypeScript.
 
 ```sh
   # Instação do express
@@ -165,19 +157,29 @@ Para iniciarmos com o desenvolvimento do <strong>Back-end</strong> da nossa apli
 
 - react-icons
 - react-router-dom | @types/react-router-dom
-- leaflet | react-leaflet | @types/leaflet
 - axios
 - react-native-picker-select
+- react-navigation
+- expo-fonts
+- async-storage
 
-### Criando o template React
+### Criando o template React Web
 
 - Para iniciarmos a parte front-end vamos criar nosso ambiente com react utilizando typescript. Para isso, vamos executar o seguinte comando:
 
 ```sh
-  $ npx create-react-app nomedapasta --template=typescript
+  $ npx create-react-app <nomedapasta> --template typescript
 ``` 
 
-### React Icons
+### Criando o template React Mobile
+
+- Para iniciarmos a parte mobile vamos criar nosso ambiente. Para isso, vamos executar o seguinte comando:
+
+```sh
+  $ expo init <nomedapasta>
+``` 
+
+### React Icons (Web e Mobile)
 
 - O **React Icons** irá nos ajudar na utilização de ícones na aplicação web. Esse pacote é bem completo e conta com várias coleções de ícones fomosas como **Font Awesome**, **Feather Icons**, **Meterial Icons**, entre outros....
 
@@ -197,7 +199,7 @@ Para iniciarmos com o desenvolvimento do <strong>Back-end</strong> da nossa apli
   <FiArrowLeft size={32} color="#fff" />
 ```
 
-### React Router DOM
+### React Router DOM (Web e Mobile)
 
 - O **React Router DOM** será responsável pelo roteamento da nossa aplicação web. para isso vamos fazer sua instalação e em seguida instalar sua tipagem.
 
@@ -209,19 +211,7 @@ Para iniciarmos com o desenvolvimento do <strong>Back-end</strong> da nossa apli
   $ npm install @types/react-router-dom -D
 ```
 
-### Leaflet
-
-- Para manusearmos um mapa nós vamos utilizar o **Leaflet**. O **Leaflet** é uma alternativa open source para utilização de mapas com **javascript**. Para utilizarmos vamos precisar instalar o seu próprio pacote, o pacote para **ReactJS** e também o pacote de tipagems
-
-```sh
-  # Instação do leaflet e react-leaflet
-  $ npm install leaflet react-leaflet
-
-  # instalação do react-leaflet com tipagem para TypeScript
-  $ npm install @types/react-leaflet -D
-```
-
-### Axios
+### Axios (Web e Mobile)
 
 - Utilizamos o **Axios** para realizar todas as requisições HTTP da nossa aplicação. É importante descatar que o axios também pode ser utilizar no **React Native**.
 
@@ -229,10 +219,37 @@ Para iniciarmos com o desenvolvimento do <strong>Back-end</strong> da nossa apli
   $ npm install axios
 ```
 
-### PickerSelect
+### PickerSelect (Mobile)
 
 - Utilizamos o **PickerSelect** para criar os componentes de input-select no mobile da aplicação.
 
 ```sh
   $ npm install react-native-picker-select
+```
+
+### React-Navigation (Mobile)
+
+- Utilizamos o **ReactNavigation** para criar as navegações entre páginas da aplicação mobile.
+
+```sh
+  $ npm install @react-navigation/native
+  $ expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+  $ npm install @react-navigation/stack <para navegação em pilha>
+  $ npm install @react-navigation/bottom-tabs <para navegação em abas>
+```
+
+### Expo-Fonts (Mobile)
+
+- Utilizamos o **Expo-Fonts** para conseguir as fonts diretamente do google.
+
+```sh
+  $ expo install expo-font @expo-google-fonts/<nomedafonte>
+```
+
+### Async Storage (Mobile)
+
+- Utilizamos o **Async Storage** para utilizar um banco de dados offline que fica no dispositivo do usuário.
+
+```sh
+  $ expo install @react-native-community/async-storage
 ```

@@ -1,5 +1,5 @@
 <h3 align="center">
-    <img alt="Logo" title="#logo" width="300px" src="./wallpapers/1 - Mobile - NLW #02 - 1080x1920.jpg"> 
+    <img alt="Logo" title="#logo" width="300px" src="./web/src/assets/images/success-background.svg"> 
     <br>
 </h3>
 
@@ -36,7 +36,7 @@ Essa aplicação foi construída na trilha <strong>Booster</strong> da <strong>N
 
 ## :books: Documentação
 
-Para conhecer as tecnologias envolvidas, acessa a **[DOCUMENTAÇÃO](DOCUMENTATION.md)**.
+Para conhecer as tecnologias envolvidas, acesse a **[DOCUMENTAÇÃO](DOCUMENTATION.md)**.
 
 <a id="tecnologias-utilizadas"></a>
 
