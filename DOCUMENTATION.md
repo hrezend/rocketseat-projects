@@ -1,5 +1,5 @@
 <h3 align="center">
-    <img alt="Logo" title="#logo" width="300px" src="./web/src/assets/images/logo.svg">
+    <img alt="Logo" title="#logo" width="300px" src="./web/src/assets/images/landing.svg">
 </h3>
 
 # Índice
@@ -82,7 +82,7 @@ Para iniciarmos com o desenvolvimento do <strong>Back-end</strong> da nossa apli
   $ npm init -y
 ```
 
-### TypeScript
+### typescript
 
 - Para utilizar **TypeScript** em qualquer projeto precisamos instalar a sua própria dependência.
 
@@ -96,7 +96,7 @@ Para iniciarmos com o desenvolvimento do <strong>Back-end</strong> da nossa apli
   $ npx typescript --init
 ```
 
-### Express
+### express
 
 - O express será o responsável pelo roteamento do nosso servidor. Precisamos instalar o pacote padrão do express e também o @types, para utilizarmos com o TypeScript.
 
@@ -127,7 +127,7 @@ Para iniciarmos com o desenvolvimento do <strong>Back-end</strong> da nossa apli
 
 - Por fim, podemos executar o servidor dessa maneira: `npm start`. Dessa forma, sempre que houver alguma alteração do código, o **ts-node-dev** irá fazer a reinicialização automática.
 
-### CORS
+### cors
 
 - O express será o responsável por permitir que outras urls acessem nossa API. Precisamos instalar o pacote padrão do cors e também o @types, para utilizarmos com o TypeScript.
 
@@ -140,7 +140,7 @@ Para iniciarmos com o desenvolvimento do <strong>Back-end</strong> da nossa apli
 
 ```
 
-### CELEBRATE
+### celebrate
 
 - O celebrate é responsável por fazer a validação de dados diretamente na fase de rotas da aplicação.
 
@@ -179,7 +179,7 @@ Para iniciarmos com o desenvolvimento do <strong>Back-end</strong> da nossa apli
   $ expo init <nomedapasta>
 ``` 
 
-### React Icons (Web e Mobile)
+### react-icons (Web e Mobile)
 
 - O **React Icons** irá nos ajudar na utilização de ícones na aplicação web. Esse pacote é bem completo e conta com várias coleções de ícones fomosas como **Font Awesome**, **Feather Icons**, **Meterial Icons**, entre outros....
 
@@ -199,7 +199,7 @@ Para iniciarmos com o desenvolvimento do <strong>Back-end</strong> da nossa apli
   <FiArrowLeft size={32} color="#fff" />
 ```
 
-### React Router DOM (Web e Mobile)
+### react-router-dom (Web e Mobile)
 
 - O **React Router DOM** será responsável pelo roteamento da nossa aplicação web. para isso vamos fazer sua instalação e em seguida instalar sua tipagem.
 
@@ -211,7 +211,7 @@ Para iniciarmos com o desenvolvimento do <strong>Back-end</strong> da nossa apli
   $ npm install @types/react-router-dom -D
 ```
 
-### Axios (Web e Mobile)
+### axios (Web e Mobile)
 
 - Utilizamos o **Axios** para realizar todas as requisições HTTP da nossa aplicação. É importante descatar que o axios também pode ser utilizar no **React Native**.
 
@@ -219,7 +219,7 @@ Para iniciarmos com o desenvolvimento do <strong>Back-end</strong> da nossa apli
   $ npm install axios
 ```
 
-### PickerSelect (Mobile)
+### react-picker-select (Mobile)
 
 - Utilizamos o **PickerSelect** para criar os componentes de input-select no mobile da aplicação.
 
@@ -227,7 +227,7 @@ Para iniciarmos com o desenvolvimento do <strong>Back-end</strong> da nossa apli
   $ npm install react-native-picker-select
 ```
 
-### React-Navigation (Mobile)
+### react-navigation (Mobile)
 
 - Utilizamos o **ReactNavigation** para criar as navegações entre páginas da aplicação mobile.
 
@@ -238,7 +238,7 @@ Para iniciarmos com o desenvolvimento do <strong>Back-end</strong> da nossa apli
   $ npm install @react-navigation/bottom-tabs <para navegação em abas>
 ```
 
-### Expo-Fonts (Mobile)
+### expo-fonts (Mobile)
 
 - Utilizamos o **Expo-Fonts** para conseguir as fonts diretamente do google.
 
@@ -246,7 +246,7 @@ Para iniciarmos com o desenvolvimento do <strong>Back-end</strong> da nossa apli
   $ expo install expo-font @expo-google-fonts/<nomedafonte>
 ```
 
-### Async Storage (Mobile)
+### async-storage (Mobile)
 
 - Utilizamos o **Async Storage** para utilizar um banco de dados offline que fica no dispositivo do usuário.
 
