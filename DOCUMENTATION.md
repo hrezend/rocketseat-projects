@@ -6,8 +6,7 @@
 
 - [Database](#database)
 - [Back-end](#back-end)
-- [Front-end](#tecnologias-utilizadas)
-- [Mobile](#como-usar)
+- [Front-end](#front-end)
 
 <a id="database"></a>
 
@@ -179,7 +178,7 @@ Para iniciarmos com o desenvolvimento do <strong>Back-end</strong> da nossa apli
   $ expo init <nomedapasta>
 ``` 
 
-### react-icons (Web e Mobile)
+### react-icons
 
 - O **React Icons** irá nos ajudar na utilização de ícones na aplicação web. Esse pacote é bem completo e conta com várias coleções de ícones fomosas como **Font Awesome**, **Feather Icons**, **Meterial Icons**, entre outros....
 
@@ -199,7 +198,7 @@ Para iniciarmos com o desenvolvimento do <strong>Back-end</strong> da nossa apli
   <FiArrowLeft size={32} color="#fff" />
 ```
 
-### react-router-dom (Web e Mobile)
+### react-router-dom
 
 - O **React Router DOM** será responsável pelo roteamento da nossa aplicação web. para isso vamos fazer sua instalação e em seguida instalar sua tipagem.
 
@@ -211,7 +210,7 @@ Para iniciarmos com o desenvolvimento do <strong>Back-end</strong> da nossa apli
   $ npm install @types/react-router-dom -D
 ```
 
-### axios (Web e Mobile)
+### axios
 
 - Utilizamos o **Axios** para realizar todas as requisições HTTP da nossa aplicação. É importante descatar que o axios também pode ser utilizar no **React Native**.
 
@@ -219,7 +218,7 @@ Para iniciarmos com o desenvolvimento do <strong>Back-end</strong> da nossa apli
   $ npm install axios
 ```
 
-### react-picker-select (Mobile)
+### react-picker-select
 
 - Utilizamos o **PickerSelect** para criar os componentes de input-select no mobile da aplicação.
 
@@ -227,7 +226,7 @@ Para iniciarmos com o desenvolvimento do <strong>Back-end</strong> da nossa apli
   $ npm install react-native-picker-select
 ```
 
-### react-navigation (Mobile)
+### react-navigation
 
 - Utilizamos o **ReactNavigation** para criar as navegações entre páginas da aplicação mobile.
 
@@ -238,7 +237,7 @@ Para iniciarmos com o desenvolvimento do <strong>Back-end</strong> da nossa apli
   $ npm install @react-navigation/bottom-tabs <para navegação em abas>
 ```
 
-### expo-fonts (Mobile)
+### expo-fonts
 
 - Utilizamos o **Expo-Fonts** para conseguir as fonts diretamente do google.
 
@@ -246,7 +245,7 @@ Para iniciarmos com o desenvolvimento do <strong>Back-end</strong> da nossa apli
   $ expo install expo-font @expo-google-fonts/<nomedafonte>
 ```
 
-### async-storage (Mobile)
+### async-storage
 
 - Utilizamos o **Async Storage** para utilizar um banco de dados offline que fica no dispositivo do usuário.
 
