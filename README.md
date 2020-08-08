@@ -1,5 +1,5 @@
 <h3 align="center">
-    <img alt="Logo" title="#logo" width="300px" src="./web/src/assets/images/logo.png"> 
+    <img alt="Logo" title="#logo" width="300px" src="./web/src/assets/images/logo.svg"> 
     <br>
 </h3>
 
@@ -29,7 +29,7 @@ O <strong>Proffy</strong> é uma aplicação Web e Mobile para ajudar pessoas a 
 Essa aplicação foi construída na trilha <strong>Booster</strong> da <strong>Next Level Week 2</strong> distribuída pela [Rocketseat](https://rocketseat.com.br/).
 
 <h3 align="center">
-    <img alt="Proffy" title="#logo" width="300px" src="./web/src/assets/images/landing.png">
+    <img alt="Proffy" title="#logo" width="300px" src="./web/src/assets/images/landing.svg">
 </h3>
 
 <a id="documentacao"></a>
@@ -66,7 +66,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
 1. Faça um clone do repositório:
 
 ```sh
-  $ git clone https://github.com/hrezend/rocketseat-workspace.git
+  $ git clone https://github.com/hrezend/proffy-nlw2.git
 ```
 
 2. Executando a Aplicação:
