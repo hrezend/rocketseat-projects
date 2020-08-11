@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import AsyncStorage from '@react-native-community/async-storage'
-import { View, Text } from 'react-native';
+import { View, Text, Picker } from 'react-native';
 import { ScrollView, TextInput, BorderlessButton, RectButton } from 'react-native-gesture-handler';
 import { Feather } from '@expo/vector-icons';
 
@@ -58,24 +58,48 @@ function TeacherList(){
                 {isFilterVisible && (
                     <View style={styles.searchForm}>
                         <Text style={styles.label}>Subject</Text>
-                        <TextInput 
-                            style={styles.input} 
-                            placeholder="Subject" 
-                            placeholderTextColor="#C1BCCC"
-                            value={subject}
-                            onChangeText={text => setSubject(text)}
-                        ></TextInput>
+                            <Picker
+                                style={styles.input}
+                                //placeholder={{label:'Subject', value:null, color: '#C1BCCC'}}
+                                selectedValue={subject}
+                                onValueChange={(itemValue) => setSubject(itemValue)}
+                            >
+                                <Picker.Item value='' label='Select a subject'></Picker.Item>
+                                <Picker.Item value= 'Artes' label= 'Artes'></Picker.Item>
+                                <Picker.Item value= 'Biologia' label= 'Biologia'></Picker.Item>
+                                <Picker.Item value= 'História' label= 'História'></Picker.Item>
+                                <Picker.Item value= 'Geografia' label= 'Geografia'></Picker.Item>
+                                <Picker.Item value= 'Filosofia' label= 'Filosofia'></Picker.Item>
+                                <Picker.Item value= 'Sociologia' label= 'Sociologia'></Picker.Item>
+                                <Picker.Item value= 'Física' label= 'Física'></Picker.Item>
+                                <Picker.Item value= 'Química' label= 'Química'></Picker.Item>
+                                <Picker.Item value= 'Matemática' label= 'Matemática'></Picker.Item>
+                                <Picker.Item value= 'Geometria' label= 'Geometria'></Picker.Item>
+                                <Picker.Item value= 'Português' label= 'Português'></Picker.Item>
+                                <Picker.Item value= 'Literatura' label= 'Literatura'></Picker.Item>
+                                <Picker.Item value= 'Redação' label= 'Redação'></Picker.Item>
+                                <Picker.Item value= 'Inglês' label= 'Inglês'></Picker.Item>
+                                <Picker.Item value= 'Música e Instrumentos' label= 'Música e Instrumentos'></Picker.Item>
+                            </Picker>
 
                         <View style={styles.inputGroup}>
                             <View style={styles.inputBlock}>
                                 <Text style={styles.label}>Day</Text>
-                                <TextInput 
-                                    style={styles.input} 
-                                    placeholder="Day" 
-                                    placeholderTextColor="#C1BCCC"
-                                    value={week_day}
-                                    onChangeText={text => setWeekDay(text)}
-                                ></TextInput>
+                                <Picker
+                                    style={styles.input}
+                                    //placeholder={{label:'Day', value:null, color: '#C1BCCC'}}
+                                    selectedValue={week_day}
+                                    onValueChange={(itemValue) => setWeekDay(itemValue)}
+                                >
+                                    <Picker.Item value='' label='Select a day'></Picker.Item>
+                                    <Picker.Item value='0' label='Domingo'></Picker.Item>
+                                    <Picker.Item value='1' label='Segunda-feira'></Picker.Item>
+                                    <Picker.Item value='2' label='Terça-feira'></Picker.Item>
+                                    <Picker.Item value='3' label='Quarta-feira'></Picker.Item>
+                                    <Picker.Item value='4' label='Quinta-feira'></Picker.Item>
+                                    <Picker.Item value='5' label='Sexta-feira'></Picker.Item>
+                                    <Picker.Item value='6' label='Sábado'></Picker.Item>
+                                </Picker>
                             </View>
                             <View style={styles.inputBlock}>
                                 <Text style={styles.label}>Time</Text>
