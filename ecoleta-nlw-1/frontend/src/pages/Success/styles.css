@@ -1,0 +1,18 @@
+#page-success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #18151F;
+  height: 100vh;
+  justify-content: center;
+}
+
+#page-success span svg {
+  color: var(--primary-color);
+  width: 50px;
+  height: 50px;
+}
+
+#page-success h1 {
+  color: #FFF;
+}
