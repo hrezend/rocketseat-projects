@@ -11,7 +11,7 @@ function Routes(){
         <BrowserRouter>
             <Switch>
                 <Route path="/" exact component={Landing}></Route>
-                <Route path="/orphanages/map" exact component={OrphanagesMap}></Route>
+                <Route path="/orphanages/list" exact component={OrphanagesMap}></Route>
                 <Route path="/orphanages/add" exact component={OrphanageCreate}></Route>
                 <Route path="/orphanages/list/:id" exact component={OrphanageList}></Route>
             </Switch>

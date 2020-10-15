@@ -1,10 +1,10 @@
-import {Router} from 'express';
+import { Router } from 'express';
 import multer from 'multer';
-import uploadConfig from './config/upload';
 import OrphanagesController from './controllers/OrphanagesController';
+import uploadConfig from './config/upload'
 
 const routes = Router();
-const upload = multer(uploadConfig);
+const upload = multer(uploadConfig)
 
 routes.get('/orphanages/list', OrphanagesController.index);
 routes.get('/orphanages/list/:id', OrphanagesController.show);
