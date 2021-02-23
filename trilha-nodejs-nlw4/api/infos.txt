@@ -1,0 +1,3 @@
+Use: "npx typeorm migration:create -n <NAME>" para criar uma migration.
+Use: "npx ts-node-dev node_modules/typeorm/cli.js migration:run" para rodar as migrations criadas.
+Use: "npm run dev" para rodar o projeto localmente (porta 3333).
