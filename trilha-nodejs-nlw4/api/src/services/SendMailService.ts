@@ -34,6 +34,9 @@ class SendMailService{
             html,
             from: "NPS <noreply@nps.com.br>"
         });
+
+        console.log('Message sent: %s', message.messageId);
+        console.log('Preview URL: %s', nodemailer.getTestMessageUrl(message));
     }
 
 }
