@@ -1,12 +1,8 @@
 import { getCustomRepository } from "typeorm";
 import { UsersRepository } from "../repositories/UsersRepository";
 
-interface IUserCreate{
-    email: string;
-}
-
 class UserService{
-    async create({email} : IUserCreate){
+    async create(email : string){
         const usersRepository = getCustomRepository(UsersRepository);
 
         //Verifica se o usuario ja existe no repositorio, e caso exista, retorna-o
