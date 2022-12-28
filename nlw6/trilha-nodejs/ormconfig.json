@@ -1,0 +1,14 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "pguser",
+  "password": "pgpass",
+  "database": "nlw6",
+  "migrations": ["src/database/migrations/*.ts"],
+  "entities": ["src/entity/*ts"],
+  "cli": {
+    "migrationsDir": "src/database/migrations",
+    "entitiesDir": "src/entity"
+  }
+}
